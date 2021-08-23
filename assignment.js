@@ -67,3 +67,19 @@ function megaFriend(arr) {
     }
 }
   
+
+// No:5
+function findLargestNumber(numbers) {
+    let largestNumber = numbers[0];
+    for (let i = 0; i < numbers.length; i++) {
+        let item = numbers[i];
+        if (item.length > largestNumber.length) {
+            largestNumber = item;
+        }
+    }
+    return largestNumber;
+}
+
+console.log(findLargestNumber(["akib", "anis", "arif", "shakil", "rustom", "rasel", "saiful", "ibrahim"]));
+
+// console.log(findLargestNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 8, 8, 7, 6, 56, 7, 78, 6, 5, 5, 54, 4, 5, 6]));
